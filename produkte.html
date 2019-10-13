@@ -10,7 +10,7 @@
   <link href="./StyleSheet.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <title>Startseite</title>
+  <title>Mahlzeiten</title>
 </head>
 
 <body>
@@ -27,11 +27,11 @@
         <div class="col-6">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="start.html">Start <span class="sr-only">(current)</span></a>
-              </li>
               <li class="nav-item">
-                <a class="nav-link" href="produkte.html">Mahlzeiten</a>
+                <a class="nav-link" href="start.html">Start </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="mahlzeiten.html">Mahlzeiten <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="bestellung.html">Bestellung</a>
@@ -56,41 +56,34 @@
   </div>
   <!-- Container for the imgs -->
   <div class="container">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/img1.jpg" class="d-block w-100" alt="Mensa-Bild1">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/img2.jpg" class="d-block w-100" alt="Mensa-Bild1">
-        </div>
+    <div class="row">
+      <div class="col" id="avaiableS">
+        <h1 class="text-center">Verfügbare Speisen (Bestseller)</h1>
+        <br />
       </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <form id="product-list" class="form-inline">
+          <fieldset>
+            <legend>Speisenliste filtern</legend>
+            <select >
+              <option value="Kategorien">Kategorien</option>
+            </select>
+            <br />
+            <br />
+            <input type="checkbox" name="products" value="avaiable">	&nbsp;nur verfügbare<br>
+            <input type="checkbox" name="products" value="vegetarian">	&nbsp;nur vegetarische<br>
+            <input type="checkbox" name="products" value="vegan">	&nbsp;nur vegane<br><br />
+            <button type="button" class="btn btn-info">Speisen filtern</button>
+          </fieldset>
+        </form>
+      </div>
+
     </div>
   </div>
   <!-- the last Container -->
-  <div class="container">
-    <div class="row top-buffer">
-      <div class="col-3">
-        <p class="card-text">Der Dienst e-Mensa ist noch beta. Sie können bereits <a href="./mahlzeiten.html">Mahlzeiten</a> durchstöbern, aber noch nicht bestellen. </p>
-      </div>
-      <div class="col-sm-7">
-        <h1>Leckere Gerichte vorbestellen</h1>
-        <p>.. und gemeinsam mit Kommilitonen und Freunden essen</p>
-      </div>
-      <div class="col-sm-2">
-        <button type="button" class="btn btn-info"><i class="far fa-hand-point-right"></i> Registrieren</button>
-        <button type="button" class="btn btn-info"><i class="fas fa-sign-in-alt"></i> Anmelden</button>
-      </div>
-    </div>
-    <div class="row top-buffer">
-      <div class="col-3">
-        <p> <a href="./registrieren.html">Registrieren </a>Sie sich hier, um über die Veröffentlichung des Dienstes per Mail informiert zu werden. </p>
-      </div>
-      <div class="col-9">
-        <img id="lower-img" src="./img/img2.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-    </div>
-  </div>
+
   <!-- footer Container -->
   <footer>
     <div class="container footer">
