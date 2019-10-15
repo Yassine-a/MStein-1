@@ -1,6 +1,9 @@
-/* Styles for wrapping the search box */
-a:link {
-    color: #01B2AC;
+a {
+    color: #01B2AC !important;
+}
+
+a.disabled {
+    color: gray !important;
 }
 
 .nav-item {
