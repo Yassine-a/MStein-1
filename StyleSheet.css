@@ -17,12 +17,11 @@ a:link {
   border-bottom: 1px ridge silver;
 }
 
-.carousel-item{
-    height: 400px;
+#upper-img{
+    height: 300px;
+    width: 100%;
 }
-.carousel-item img{
-    height: 400px;
-}
+
 
 #lower-img{
   height: 150px;
