@@ -64,17 +64,17 @@
     </div>
     <div class="row">
       <div class="col-sm-3">
-        <form id="product-list" class="form-inline">
-          <fieldset>
+        <form id="product-list">
+          <fieldset >
             <legend>Speisenliste filtern</legend>
             <select>
               <option value="Kategorien">Kategorien</option>
             </select>
             <br />
             <br />
-            <input type="checkbox" name="products" value="avaiable"> &nbsp;nur verfügbare<br>
-            <input type="checkbox" name="products" value="vegetarian"> &nbsp;nur vegetarische<br>
-            <input type="checkbox" name="products" value="vegan"> &nbsp;nur vegane<br><br />
+            <label for="avaiable"><input type="checkbox" name="products" value="avaiable" id="avaiable"> &nbsp;nur verfügbare</label>
+            <label for="vegetarian"> <input type="checkbox" name="products" value="vegetarian" id="vegetarian"> &nbsp;nur vegetarische</label>
+            <label for="vegan"> <input type="checkbox" name="products" value="vegan" id="vegan">&nbsp;nur vegane</label><br><br />
             <button type="button" class="btn btn-info">Speisen filtern</button>
           </fieldset>
         </form>
@@ -116,12 +116,12 @@
           <div class="col-sm-2">
             <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/726613174523297792/v0edN9KP_400x400.jpg" alt="Falafel Picture">
             <h5>Käsestulle</h5>
-            <a href="#">Details</a>
+            <a href="Deatil.html">Details</a>
           </div>
           <div class="col-sm-2">
             <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/726613174523297792/v0edN9KP_400x400.jpg" alt="Falafel Picture">
             <h5 >Spiegelei</h5>
-            <a href="#">Details</a>
+            <a href="Deatil.html">Details</a>
           </div>
         </div>
       </div>
