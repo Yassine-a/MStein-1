@@ -1,9 +1,9 @@
 a {
-    color: #01B2AC !important;
+    color: #00b5ad;
 }
 
 a.disabled {
-    color: gray !important;
+    color: gray;
 }
 
 .nav-item {
@@ -35,8 +35,8 @@ a.disabled {
 
 .btn-info {
     margin-bottom: 10px;
-    background-color: #01B2AC;
-    border-color: #01B2AC;
+    background-color: #00b5ad;
+    border-color: #00b5ad;
 }
 
 .footer{
