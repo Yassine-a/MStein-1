@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link href="./StyleSheet.css" rel="stylesheet" />
-  <title>Mahlzeiten</title>
+  <title>Details</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             <li class="nav-item">
               <a class="nav-link" href="start.html">Start</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="produkte.html">Mahlzeiten</a>
             </li>
             <li class="nav-item">
@@ -51,80 +51,94 @@
       </nav>
     </header>
   </div>
-  <!-- Container for the imgs -->
+  <!-- Container for the body -->
   <div class="container">
     <div class="row">
-      <div class="col" id="avaiableS">
-        <h1 class="text-center">Verfügbare Speisen (Bestseller)</h1>
+      <div class="col-3">
+        <!--empty space-->
+      </div>
+      <div class="col-9" id="avaiableS">
+        <h1>Details für "Falafel"</h1>
         <br />
       </div>
     </div>
+  </div>
+
+  <div class="container">
     <div class="row">
-      <div class="col">
-        <form id="product-list">
-          <fieldset >
-            <legend>Speisenliste filtern</legend>
-            <select>
-              <option value="Kategorien">Kategorien</option>
-            </select>
-            <br />
-            <br />
-            <label for="avaiable"><input type="checkbox" name="products" value="avaiable" id="avaiable"> &nbsp;nur verfügbare</label>
-            <label for="vegetarian"> <input type="checkbox" name="products" value="vegetarian" id="vegetarian"> &nbsp;nur vegetarische</label>
-            <label for="vegan"> <input type="checkbox" name="products" value="vegan" id="vegan">&nbsp;nur vegane</label><br><br />
-            <button type="button" class="btn btn-info">Speisen filtern</button>
+      <div class="col-3">
+        <form method="get">
+          <fieldset>
+            <legend>&nbsp;Login </legend>
+            <label for="username"><input type="text" name="username" placeholder="Benutzer" id="username"></label>
+            <label for="password"><input type="password" name="password" placeholder="********" id="password"></label>
+            <a href="#">Anmelden</a>
           </fieldset>
         </form>
       </div>
-      <div class="col-9" style="text-align:center">
-        <div class="row">
-          <div class="col-sm-2">
-            <img class="rounded img-thumbnail" src="https://pbs.twimg.com/profile_images/726613174523297792/v0edN9KP_400x400.jpg" alt="Falafel Picture">
-            <h5>Curry Wolk</h5>
-            <a href="Detail.html">Details</a>
-          </div>
-          <div class="col-sm-2">
-            <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/726613174523297792/v0edN9KP_400x400.jpg" alt="Falafel Picture">
-            <h5>Schnitzel</h5>
-            <a href="Detail.html">Details</a>
-          </div>
-          <div class="col-sm-2">
-            <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/726613174523297792/v0edN9KP_400x400.jpg" alt="Falafel Picture">
-            <h5>Bratrolle</h5>
-            <a target="_self" class="btn disabled" href="Detail.html">vergriffen</a>
-          </div>
-          <div class="col-sm-2">
-            <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/726613174523297792/v0edN9KP_400x400.jpg" alt="Falafel Picture">
-            <h5>Krautsalat</h5>
-            <a href="Detail.html">Details</a>
-          </div>
+
+      <div class="col-7">
+        <img class="img-fluid img-thumbnail" src="./img/img1.jpg" alt="Responsive images">
+      </div>
+
+      <div class="col-2">
+        <div class="float-right">
+          <aside>
+            <h5><strong>Gast</strong>-Preis</h5>
+            <p style="font-size:45px">5,95&euro;</p>
+            <button type="button" class="btn btn-info" style="position:absolute; bottom:0"><i class="fas fa-utensils"></i> Vorbestellen</button>
+          </aside>
         </div>
-        <div class="row">
-          <div class="col-sm-2">
-            <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/726613174523297792/v0edN9KP_400x400.jpg" alt="Falafel Picture">
-            <h5>Falafel</h5>
-            <a href="Detail.html">Details</a>
-          </div>
-          <div class="col-sm-2">
-            <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/726613174523297792/v0edN9KP_400x400.jpg" alt="Falafel Picture">
-            <h5>Currywurst</h5>
-            <a href="Detail.html">Details</a>
-          </div>
-          <div class="col-sm-2">
-            <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/726613174523297792/v0edN9KP_400x400.jpg" alt="Falafel Picture">
-            <h5>Käsestulle</h5>
-            <a href="Detail.html">Details</a>
-          </div>
-          <div class="col-sm-2">
-            <img class="img-thumbnail" src="https://pbs.twimg.com/profile_images/726613174523297792/v0edN9KP_400x400.jpg" alt="Falafel Picture">
-            <h5 >Spiegelei</h5>
-            <a href="Detail.html">Details</a>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row" style="padding:20px">
+      <div class="col-3">
+        <p>Melden Sie sich jetzt an, um die wirklich viel günstigeren Preise für Mitarbeiter oder Studenten zu sehen.</p>
+      </div>
+      <div class="col-6">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#beschreibung" role="tab" aria-selected="true">Beschreibung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#zutaten" role="tab" aria-selected="false">Zutaten</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#bewertungen" role="tab" aria-selected="false">Bewertungen</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="beschreibung" role="tabpanel">Teigtasche mit Falafel aus Kicherebsen und Sesam dazu passt hervorragend der <a href="#">Krautsalat</a></div>
+          <div class="tab-pane fade" id="zutaten" role="tabpanel" >Zutaten für ..</div>
+          <div class="tab-pane fade" id="bewertungen" role="tabpanel">
+            <br>
+            <form action="http://bc5.m2c-lab.fh-aachen.de/form.php" method="post" target="_self">
+              <label for="benutzer">Benutzername:
+                <input id="benutzer" type="text" name="benutzer" placeholder="Benutzer">
+              </label><br>
+              <label for="mahlzeit">Mahlzeit:
+                <select name="mahlzeit" id="mahlzeit">
+                  <option value="falafel">Falafel</option>
+                  <option value="sonstiges">To-Be-Added</option>
+                </select>
+              </label> <br>
+              <label for="bewertung">Bewertung:</label>
+              <input type="number" name="bewertung" step="1" id="bewertung" min="1" max="5" value="1">
+              <br>
+              <label for="bemerkung"> Bemerkung: </label><br>
+              <textarea name="bemerkung" rows="5" cols="50" id="bemerkung"></textarea><br>
+              <input class="btn btn-info" type="submit" value="Bewertung absenden">
+              <input type="hidden" name="matrikel" value="3170834" />
+              <input type="hidden" name="kontrolle" value="abd" />
+            </form>
+
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- the last Container -->
 
   <!-- footer Container -->
   <footer>
@@ -133,8 +147,7 @@
         <div class="col-3">
           <p>(c) 2019 DBWT</p>
         </div>
-        <div class="col-9">
-          <!--horizontal menu-->
+        <div class="col-sm-9">
           <ul class="nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Login</a>
